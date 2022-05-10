@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cadastro da Etec</title>
+<style>
+img {
+     display: block;
+    margin-left: 1200px;
+}
+
+h1 {
+    margin-left: 490px;
+}
+
+
+fieldset {
+    margin-right: 80px;
+}
+
+ul {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   width: 100%
+   background-color: #f1f1f1;
+}
+
+li a {
+     display: block;
+	 color: #000;
+	 padding: 8px 16px;
+	 text-decoration;
+}
+
+li a:hover {
+  background-color: black;
+  color: white;
+}
+
+</style>
+</head>
+<body>
+<ul>
+   <li><a href="#home">Home</a></li>
+   <li><a href="#cadastro">Cadastro</a></li>
+</ul>
+
+<h1>Siga as opções para fazer seu cadastro:</h1>
+
+<figure>
+<img src="Etec.png">
+</figure>
+
+<h2>Digite seu nome:</h2>
+
+<fieldset>
+<form action="/action_page.php">
+  <label for=name> Nome: </label>
+  <input type="text" id=text name"nome" value="">
+  <br><br>
+    
+  <label for=name2> Idade: </label>
+  <input type="text" id=text name"nome" value="">
+
+</fieldset>
+
+<h2>Sexualidade:</h2>
+
+<fieldset>
+<form action="/action_page.php">
+<label> Sexualidade:
+  <select name="sexo">
+    <option value="masc">Masculino</option>
+	<option value="fem">Feminino</option>
+
+</select>
+</label>
+</fieldset>
+
+<h2>Data de Nascimento:
+
+<fieldset>
+<form action="/action_page.php">
+    <label for=dt_nasimento </label>
+    <input type="date" id=dt_nascimento name"nascimento" value="">
+</fieldset>
+  
+<h2>Insira seu E-mail:</h2>
+
+<fieldset>
+<form action="/action_page.php">
+    <label for=email> E-mail: </label>
+    <input type="email" id=email name"email" value="">
+  <br><br>
+  
+    <label for=senha> Senha: </label>
+    <input type="password" id=senha name"Senha" value=""><br><br>
+
+</fieldset>
+
+<h2>Estado Civil:</h2>
+
+<fieldset>
+<form action="/action_page.php">
+    <input type="radio" id="casado" name="est_civil" value="casado">
+    <label for="casado">Casado</label>
+  
+    <input type="radio" id="solteiro" name="est_civil" value="solteiro">
+    <label for="solteiro">Solteiro</label>
+  
+    <input type="radio" id="divorciado" name="est_civil" value="divorciado">
+    <label for="divorciado">Divorciado</label>
+  
+    <input type="radio" id="viuvo" name="est_civil" value="viuvo">
+    <label for="viuvo">Viúvo</label><br><br>
+
+</fieldset>
+
+<h2>Modo de locomoção:</h2>
+
+<fieldset>
+<form action="/action_page.php">
+    <input type="checkbox" id="vehiclel" name="veiculo" value="Bicicleta">
+    <label for="vehiclel">Bicileta</label><br>
+  
+    <input type="checkbox" id="vehicle2" name="veiculo" value="Carro">
+    <label for="vehicle2">Carro</label><br>
+  
+    <input type="checkbox" id="vehicle3" name="veiculo" value="Moto">
+    <label for="vehicle3">Moto</label><br><br>
+
+</fieldset>
+
+<h2>Selecione a área de seu interesse:</h2>
+
+<fieldset>
+<form action="/action_page.php">
+<label> Cursos:
+  <select name="cursos">
+    <option value="ta">Técnico em Administração</option>
+	<option value="tc">Técnico em Contabilidade</option>
+	<option value="tm">Técnico em Marketing</option>
+	<option value="tp">Técnico em Progamação</option>
+	<option value="tc">Técnico em Redes de Computadores</option>
+	<option value="tsj">Técnico em Serviços Jurídicos</option>
+    <option value="ti">Técnico em Transações Imobiliárias</option>
+
+	</select>
+</fieldset>
+</label>
+
+<h2>Endereço:</h2>
+
+<fieldset>
+<form action="/action_page.php">
+    <label for=bairro> Bairro: </label></br>
+    <input type="text" id=bairro name="bairro" value="">
+<br><br>
+    <label for=rua> Rua: </label></br>
+  <input type="text" id=rua name="rua" value="">
+ <br><br>
+    <label for=numero> Número: </label><br>
+    <input type="text" id=numero name="numero" value="">
+
+</fieldset>
+
+<h2>Selecione seu tipo de Ensino:</h2>
+<fieldset>
+<form action="/action_page.php">
+    <label> Estuda: 
+  <select name="cursos">
+    <option value="ta">Ensino Fundamental</option>
+	<option value="tc">Ensino Médio</option>
+	<input type="submit">
+
+</fieldset>
+</form>
+</body>
+</html>
